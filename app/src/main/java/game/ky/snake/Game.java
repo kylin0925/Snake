@@ -55,7 +55,7 @@ public class Game {
 
         head.x += directionMap[snakeDir][0];
         head.y += directionMap[snakeDir][1];
-        //Log.d(TAG,"x " + head.x + " y " + head.y);
+
         if(head.y < 0 || head.x < 0 || head.y >= BHEIGHT || head.x >= BWIDTH) {
             return false;
         }
@@ -87,7 +87,6 @@ public class Game {
         return snake.get(0);
     }
     public void eatFood(Point food){
-        //Point food = new Point(1,2);
         snake.add(0,food);
     }
     public int[][] getBoard(){

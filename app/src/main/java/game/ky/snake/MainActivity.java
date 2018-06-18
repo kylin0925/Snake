@@ -36,28 +36,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //GameView gameView = new GameView(this);
         setContentView(R.layout.activity_main);
-        //setContentView(gameView);
 
-
-        /*final GameView gameView = (GameView)findViewById(R.id.Gameview);
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(true){
-                    gameView.drawBoard();
-                    gameView.invalidate();
-                    try{
-                        Log.e(TAG,"e..." );
-                        Thread.sleep(100);
-                    }catch (Exception ex){
-                        Log.e(TAG,"error " + ex);
-                    }
-                }
-            }
-        });
-        thread.start();*/
         backgroud = new Paint();
         backgroud.setColor(Color.BLUE);
 
